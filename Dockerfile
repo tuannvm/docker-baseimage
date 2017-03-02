@@ -1,7 +1,7 @@
-FROM phusion/baseimage
+FROM phusion/passenger-full
 
 RUN apt-get update \
- && apt-get install -y telnet inetutils-ping curl unzip vim locales \
+ && apt-get install -y telnet inetutils-ping curl unzip vim locales python-pip\
  && dpkg-reconfigure -f noninteractive locales \
  && /usr/sbin/update-locale LANG=en_US.UTF-8 \
  && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
