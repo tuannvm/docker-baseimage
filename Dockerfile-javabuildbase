@@ -10,3 +10,5 @@ RUN wget -q --progress=dot:mega http://downloads.typesafe.com/typesafe-activator
   ln -s /opt/activator/bin/activator /usr/local/bin/activator && \
   rm -f typesafe-activator-$ACTIVATOR_VERSION.zip
 
+RUN chmod +x /usr/local/bin/activator
+
