@@ -1,2 +1,2 @@
 FROM node:4-alpine
-RUN apk --update add curl python
+RUN apk --update add curl python make gcc
